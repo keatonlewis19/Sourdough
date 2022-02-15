@@ -1,0 +1,51 @@
+body {
+    background-color:#36454f;
+    color: #f2f4f3;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+h2 {
+    color: #006591;
+}
+h3 {
+    color: #006591;
+}
+section {
+    background-color: #93a3b1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 75px;
+    border: 15px solid #006591;
+}
+section:hover {
+    background-color:#a1d2c3;
+    border: 15px solid #93a3b1;
+    color: #36454f;
+}
+section:hover h2 h3 {
+    color: #93a3b1;
+}
+li {
+    text-align: left;
+}
+    a:link {
+        color: #006591;
+    }
+    a:visited {
+        color: #a1d2c3;
+    }
+    a:hover {
+        color: #f2f4f3;
+    }
+    a:active {
+        color: #006591;
+    }
+section.podcast {
+    background-image: url("podcast.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
