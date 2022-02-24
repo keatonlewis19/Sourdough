@@ -44,9 +44,18 @@ li {
     a:active {
         color: #006591;
     }
-section.podcast {
+#podcast {
     background-image: url("podcast.jpg");
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
+}
+div.video {
+    background-color: #36454f;
+    align-content: center;
+    border: 15px solid #006591;
+}
+.overlay {
+    background-color: rgb(0,0,0,0.5);
+    background-size: cover;
 }
