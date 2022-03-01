@@ -69,3 +69,6 @@ section:hover {
     height: 2px;
     align-self: center;
 }
+.dark-background {
+    color: #f3f4f3;
+}
