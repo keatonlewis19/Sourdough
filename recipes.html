@@ -8,7 +8,10 @@
     </head>
 
 <body>
-    <div id="navbar">
+    <section class="hero-section">
+
+    </section>
+    <div class="header" id="myHeader">
         <nav>
             <a href="index.html">Home</a>
             <a href="starter.html">Sourdough Starter</a>
@@ -16,6 +19,20 @@
             <a href="recipes.html">Other Recipes</a>
         </nav>
     </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
 
     <header>
        

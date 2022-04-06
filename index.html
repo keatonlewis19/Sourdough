@@ -1,18 +1,3 @@
-<!--
-
-Site Options:
-    -How to make Sourdough Bread
-        -Home => General Overview
-            -attach pdf of your recipe for download
-        -Starter => Caring for and feeding your starter
-        -Baking => Baking Instructions
-            -have step by step instructions set up in columns with 25% as the image and 75% as the instructions
-        -Other Recipes => Using sourdough starter in other recipes
-
-    
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,7 +8,14 @@ Site Options:
     </head>
 
 <body>
-    <div id="navbar">
+    <section class="hero-section" style="backround-image: url('https://theneffkitchen.com.au/wp-content/uploads/2019/09/Sourdough_Feature.jpg')">
+        <div class="hero-div">
+            <h1 class="hero-title">Sourdough Bread</h1>
+            <div class="hero-divline"></div>
+            <h2 class="hero-subtitle">The Recipe</h2>
+        </div>
+    </section>
+    <div class="header" id="myHeader">
         <nav>
             <a href="index.html">Home</a>
             <a href="starter.html">Sourdough Starter</a>
@@ -31,10 +23,24 @@ Site Options:
             <a href="recipes.html">Other Recipes</a>
         </nav>
     </div>
-
-    <header>
-       
-    </header>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+    <section class="content">
+        <h1>History</h1>
+        <div class="div-line"></div> 
+    </section>
     
    
 
