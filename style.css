@@ -68,6 +68,10 @@ h2 {
     margin-bottom: 75px;
 }
 
+/*Individual IDs for hero sections*/
+#hero-home {
+    
+}
 
 #lessons {
     background-image: url(https://uploads-ssl.webflow.com/60ac057e36634dca6ee0bbbd/60d4fcf0db702457925a3113_background-seamless-polygon-dark-clear.png);
