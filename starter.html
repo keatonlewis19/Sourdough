@@ -8,17 +8,43 @@
     </head>
 
 <body>
-    <section class="hero-section">
-
-    </section>
-    <div class="header" id="myHeader">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="starter.html">Sourdough Starter</a>
-            <a href="baking.html">The Recipe</a>
-            <a href="recipes.html">Other Recipes</a>
-        </nav>
+<!--Hero Section-->
+<section id="hero-starter" class="hero-section">
+    <div class="hero-div">
+        <h1 class="hero-title">Sourdough Bread</h1>
+        <div class="hero-divline"></div>
+        <h2 class="hero-subtitle">The Recipe</h2>
     </div>
+</section>
+<!--End Hero Section-->
+
+<!--Navbar Section-->
+    <div>    
+        <div id="navbar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="starter.html">Sourdough Starter</a>
+                <a href="baking.html">The Recipe</a>
+                <a href="recipes.html">Other Recipes</a>
+            </nav>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+    </div>
+<!--End Navbar Section-->
   <!--Fill in the titles for h1 and h2 tags for the specific page.-->
     <section class="hero-section" id="hero-home">
         <div class="hero-div">
@@ -34,9 +60,20 @@
     
    
 
-    <footer>
-        &#169 2022 Keaton Lewis: the Man, The Myth, the Legend
-    </footer>
+<!--Footer-->
+<footer>
+    <div class="row">
+        <div class="column-image">
+            <a href="index.html">Home</a>
+            <a href="starter.html">Sourdough Starter</a>
+            <a href="baking.html">The Recipe</a>
+            <a href="recipes.html">Other Recipes</a>
+        </div>
+        <div class="column-text"></div>
+    </div>
+    &#169 2022 Keaton Lewis: the Man, The Myth, the Legend
+</footer>
+<!--End Footer-->
 
 </body>
 </html>

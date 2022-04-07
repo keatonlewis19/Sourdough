@@ -3,19 +3,99 @@ body {
     font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     color: #717568;
 }
-.header {
+
+/*
+Navbar
+*/
+/*
+#navbar {
+    overflow: hidden;
     width: 100%;
     height: 75px;
     background: #af3f2b;
     color: #f2f4f3;
     position: fixed;
   }
-.content {
-    margin: auto;
-    width: 100%;
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    align-items: center;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+*/
+#navbar {
+    overflow: hidden;
+    background-color: #a53f2b;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f4f3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #f2f4f3;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+/*------------------------------*/
+
+
+/*
+Page Content and Sections
+*/
+section {
+    position: relative;
+    padding: 16px;
+}
+.content-left {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-center {
+
+}
+.row {
+    display: flex;
+}
+.column-image {
+    flex:25%;
+}
+.column-text {
+    flex:75%;
 }
 footer {
     background-color: #a53f2b;
@@ -23,11 +103,23 @@ footer {
     width: 100%;
     color: #f2f4f3;
     text-align: center;
-    vertical-align: center;
+    align-items: center;
 }
-.hero-div {
+/*------------------------------*/
+
+
+/*
+Hero Section Features
+*/
+.hero-section {
     margin: 0 auto;
     display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px,0px,200px,0px;
+}
+.hero-div {
+    align-items: center;
     justify-content: center;
 }
 .hero-title {
@@ -37,10 +129,8 @@ footer {
 }
 .hero-divline {
     height: 3px;
-    width: 60%;
+    width: 100%;
     background-color: #f2f4f3;
-    margin-top: -40px;
-    margin-bottom: -20px;
     display: flex;
     justify-content: center;
 }
@@ -49,33 +139,54 @@ footer {
     font-size: 30pt;
     text-align: center;
 }
+/*------------------------------*/
+
+
+/*
+Individual IDs for hero sections
+*/
+#hero-home {
+    background-image: 
+    background-position: center;
+    background-size:200px;
+    background-repeat: repeat; 
+}
+#hero-starter {
+
+}
+#hero-baking {
+
+}
+#hero-recipes {
+    
+}
+/*------------------------------*/
+
+
+/*
+Titles and Headings
+*/
 h1 {
     Color: #280004;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25pt;
     text-align: left;
+    column-span:all;
 }
 h2 {
     Color: #a52f2b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25pt;
     text-align: left;
+    column-span:all;
 }
 .div-line {
     height: 3px;
-    width: 80%;
+    width: 100%;
     background-color: #280004;
     margin-bottom: 75px;
+    column-span:all;
 }
+/*------------------------------*/
 
-/*Individual IDs for hero sections*/
-#hero-home {
-    
-}
 
-#lessons {
-    background-image: url(https://uploads-ssl.webflow.com/60ac057e36634dca6ee0bbbd/60d4fcf0db702457925a3113_background-seamless-polygon-dark-clear.png);
-    background-position: center;
-    background-size:200px;
-    background-repeat: repeat;
-}
