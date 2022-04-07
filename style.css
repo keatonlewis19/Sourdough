@@ -48,8 +48,8 @@ Navbar
   }
   
   #navbar a:hover {
-    background-color: #f2f4f3;
-    color: black;
+    background-color: #717568;
+    color: #f2f4f3;
   }
   
   #navbar a.active {
@@ -146,9 +146,9 @@ Hero Section Features
 Individual IDs for hero sections
 */
 #hero-home {
-    background-image: 
+    background-image: url("images/hero-home-image.jpg")
     background-position: center;
-    background-size:200px;
+    background-size: 200px;
     background-repeat: repeat; 
 }
 #hero-starter {
