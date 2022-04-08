@@ -146,10 +146,10 @@ Hero Section Features
 Individual IDs for hero sections
 */
 #hero-home {
-    background-image: url("images/hero-home-image.jpg")
+    background-image: url("images/hero-home-image.jpg");
     background-position: center;
-    background-size: 200px;
-    background-repeat: repeat; 
+    background-size: auto;
+    background-repeat: cover; 
 }
 #hero-starter {
 
