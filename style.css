@@ -83,7 +83,10 @@ section {
     margin-right: auto;
 }
 .content-center {
-
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* Multiple Column Section */
