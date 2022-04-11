@@ -75,7 +75,9 @@ footer {
 
 section {
     position: relative;
-    padding: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 .content-left {
     width: 80%;
@@ -87,6 +89,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    align-items: center;
 }
 
 /* Multiple Column Section */
@@ -94,21 +97,28 @@ section {
 .row {
     display: flex;
     align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .column-image {
     flex:25%;
     align-items: center;
+    padding-right: 25px;
 }
 .column-text {
     flex:75%;
     align-items: center;
+}
+.column-even {
+    flex:50%;
+    text-align: left;
 }
 
 /* Hero Section Features */
 
 .hero-section {
     margin: 0 auto;
-    height: 450px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -154,7 +164,7 @@ section {
 #hero-baking {
     background-image: url("images/hero-baking-image.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 #hero-recipes {
@@ -162,6 +172,14 @@ section {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+#button-section {
+    background-image: url("images/hero-baking-image.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color:#f2f4f3;
+    justify-items: center;
 }
 .solid-background {
     background-color: #a53f2b;
@@ -171,16 +189,23 @@ section {
 /* Titles, Text, and Headings */
 
 h1 {
-    Color: #280004;
+    color: #280004;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25pt;
     text-align: left;
     column-span:all;
 }
 h2 {
-    Color: #a52f2b;
+    color: #a52f2b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25pt;
+    text-align: left;
+    column-span:all;
+}
+h3 {
+    color: #280004;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
     text-align: left;
     column-span:all;
 }
@@ -203,6 +228,20 @@ h2.lighter {
 p.lighter {
     color:#f2f4f3;
 }
+ol.lighter {
+    color:#f2f4f3
+}
+ul.lighter {
+    color:#f2f4f3
+}
+
+/* Lists */
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
 
 /* Images */
 
@@ -211,3 +250,31 @@ p.lighter {
     border-radius: 8%;
     box-shadow: 5px 10px 15px;
 } 
+
+/* Buttons */
+
+.btn {
+    background-color: #a53f2b;
+    border: solid #f2f4f3 3px;
+    color: #f2f4f3;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+.btn:hover {
+    background-color: #717568;
+}
+.btn-dark {
+    background-color: #f2c57c;
+    border: solid #f2f4f3 3px;
+    color: #a53f2b;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn-dark:hover {
+    background-color: #717568;
+    color: #f2f4f3;
+}
