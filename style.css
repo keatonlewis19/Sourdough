@@ -19,37 +19,37 @@ body {
     z-index: 9999;
   }
   
-  #navbar a {
+#navbar a {
     float: left;
     display: block;
     color: #f2f4f3;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18pt;
   }
   
-  #navbar a:hover {
+#navbar a:hover {
     background-color: #717568;
     color: #f2f4f3;
   }
   
-  #navbar a:active {
+#navbar a:active {
     background-color: #f2c57c;
     color: white;
   }
   
-  .content {
+.content {
     padding: 16px;
   }
   
-  .sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
   }
   
-  .sticky + .content {
+.sticky + .content {
     padding-top: 60px;
   }
 
@@ -65,6 +65,8 @@ footer {
     font-size: 12pt;
 	text-align: center;
     margin-top: 50px;
+    border-top: solid #f2f4f3 3px;
+    border-bottom: solid #f2f4f3 3px;
 }
 #p-footer {
     font-size: 12pt;
@@ -181,6 +183,12 @@ section {
     color:#f2f4f3;
     justify-items: center;
 }
+#recipe-background {
+    background-image: url("images/recipe-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 .solid-background {
     background-color: #a53f2b;
     padding-bottom: 50px;
@@ -225,14 +233,16 @@ h2.lighter {
 .div-line.lighter {
     background-color:#f2f4f3;
 }
+.div-line.lighter.divider {
+    margin-top: 50px;
+    height: 2px;
+}
 p.lighter {
     color:#f2f4f3;
+    font-size: 16pt;
 }
-ol.lighter {
-    color:#f2f4f3
-}
-ul.lighter {
-    color:#f2f4f3
+a {
+    color:#f2f4f3;
 }
 
 /* Lists */
@@ -241,6 +251,20 @@ li {
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
+    text-align: left;
+}
+ol {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    font-size: 50px;
+    list-style-position: inside;
+}
+ol.lighter {
+    color:#f2f4f3
+}
+ul.lighter {
+    color:#f2f4f3
 }
 
 /* Images */
@@ -248,8 +272,13 @@ li {
 .img-column {
     width:250px;
     border-radius: 8%;
-    box-shadow: 5px 10px 15px;
+    box-shadow: 5px 10px 15px #000;
 } 
+.img-column.lighter {
+    width:250px;
+    border-radius: 8%;
+    box-shadow: 5px 10px 15px #000;
+}
 
 /* Buttons */
 
