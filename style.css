@@ -178,8 +178,8 @@ section {
 #button-section {
     background-image: url("images/hero-baking-image.jpg");
     background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-position: right;
+    background-size: contain;
     color:#f2f4f3;
     justify-items: center;
 }
@@ -244,6 +244,9 @@ p.lighter {
 a {
     color:#f2f4f3;
 }
+em.add-on {
+    font-size:13pt;
+}
 
 /* Lists */
 
@@ -253,7 +256,7 @@ li {
     align-items: center;
     text-align: left;
 }
-ol {
+ol.recipe {
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
