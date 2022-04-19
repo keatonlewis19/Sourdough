@@ -176,10 +176,10 @@ section {
     background-size: cover;
 }
 #button-section {
-    background-image: url("images/hero-baking-image.jpg");
+    background-image: url("images/button-baking-image.jpg");
     background-attachment: fixed;
-    background-position: right;
-    background-size: contain;
+    background-position: bottom;
+    background-size: 1871px;
     color:#f2f4f3;
     justify-items: center;
 }
