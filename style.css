@@ -172,7 +172,7 @@ section {
 #hero-recipes {
     background-image: url("images/hero-recipes-image.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 #button-section {
